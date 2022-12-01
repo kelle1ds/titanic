@@ -1,0 +1,5 @@
+falcon
+gunicorn
+ujson
+tflite-runtime
+numpy

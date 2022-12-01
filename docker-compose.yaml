@@ -1,0 +1,15 @@
+version: '3.10'
+services:
+    web:
+        build: ./web
+        image: titanic:0.1
+        container_name: titanic_pred
+        ports:
+            - "8888:8888"
+        networks:
+            - cnets-outside
+
+networks:
+    cnets-outside:
+        name: cnets-out
+        internal: false
